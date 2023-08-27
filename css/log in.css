@@ -1,0 +1,264 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body html {
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 10px 0 10px 0;
+}
+
+h3 {
+  font-size: 12px;
+  text-transform: uppercase;
+  margin: 0 0 10px 0;
+}
+
+.white {
+  color: white;
+}
+
+.inp {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: absolute;
+}
+
+.contaner__inp-man, .contaner__inp-woman {
+  font-size: 14px;
+  padding-left: 30px;
+}
+
+.contaner__inp-woman::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 129px;
+  top: 142px;
+  width: 18px;
+  height: 18px;
+  background-color: transparent;
+  border: 1px solid rgba(31, 32, 65, 0.2509803922);
+  border-radius: 10px;
+}
+
+.contaner__inp-man::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 20px;
+  top: 142px;
+  width: 18px;
+  height: 18px;
+  background-color: transparent;
+  border: 1px solid rgba(31, 32, 65, 0.2509803922);
+  border-radius: 10px;
+}
+
+.contaner__inp-woman::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 133px;
+  top: 146px;
+  width: 12px;
+  height: 12px;
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+.contaner__inp-man::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 24px;
+  top: 146px;
+  width: 12px;
+  height: 12px;
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+.inp:checked + .contaner__inp-woman::before {
+  border: 1px solid #BC9CFF;
+}
+
+.inp:checked + .contaner__inp-man::before {
+  border: 1px solid #BC9CFF;
+}
+
+.inp:checked + .contaner__inp-woman::after {
+  background-color: #BC9CFF;
+}
+
+.inp:checked + .contaner__inp-man::after {
+  background-color: #BC9CFF;
+}
+
+.contaner {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.contaner .contaner__block {
+  width: 300px;
+  height: 525px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.2);
+  padding: 5px 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.contaner .contaner__section {
+  margin: 0 0 0 0;
+  width: 280px;
+}
+.contaner .contaner__inblck {
+  display: flex;
+  justify-content: flex-start;
+  margin: 10px 0 25px 0;
+}
+.contaner .contaner__radio-lable:first-child {
+  margin: 0 10px 0 0;
+}
+.contaner .contaner__radio-lable:last-child {
+  margin: 0 0 0 10px;
+}
+.contaner .contaner__info {
+  width: 260px;
+  height: 22px;
+  margin: 0 0 3px 0;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 5px;
+  border: 1px solid rgba(31, 32, 65, 0.2509803922);
+  outline: none;
+}
+.contaner input::-moz-placeholder {
+  color: rgba(31, 32, 65, 0.2509803922);
+}
+.contaner input::placeholder {
+  color: rgba(31, 32, 65, 0.2509803922);
+}
+.contaner .contaner__btn {
+  width: 280px;
+  height: 44px;
+  margin: 15px 0 18px 0;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 2rem;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  text-align: center;
+  color: #FFF;
+  text-transform: uppercase;
+  border: none;
+  padding: 10px 0;
+  cursor: pointer;
+}
+.contaner .contaner__section:focus + .contaner__btn {
+  outline: 1px solid #BC9CFF;
+  outline-offset: 3px;
+}
+.contaner .contaner__section:nth-child(2) {
+  height: 70px;
+}
+.contaner .contaner__section:last-child {
+  width: 280px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 10px 0;
+}
+.contaner .contaner__text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.contaner .contaner__enter {
+  width: 99px;
+  height: 44px;
+  background-color: transparent;
+  border: 2px solid #BC9CFF;
+  border-radius: 2rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #BC9CFF;
+  cursor: pointer;
+}
+.contaner .contaner__lable {
+  margin: 10px 0 0 0;
+}
+.contaner .checkbox {
+  display: inline-block;
+}
+.contaner .checkbox__inp {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: absolute;
+}
+.contaner .checkbox__text {
+  display: inline-block;
+  position: relative;
+  font-size: 14px;
+  padding-left: 50px;
+}
+.contaner .checkbox__text::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 38px;
+  height: 18px;
+  background-color: transparent;
+  border-radius: 10px;
+  border: 1px solid rgba(31, 32, 65, 0.2509803922);
+  transition: border 0.4s;
+}
+.contaner .checkbox__text::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 10px;
+  background-color: rgba(31, 32, 65, 0.2509803922);
+  transition: background-color 0.4s, left 0.4s;
+}
+.contaner .checkbox__inp:checked + .checkbox__text::before {
+  border: 1px solid #BC9CFF;
+}
+.contaner .checkbox__inp:checked + .checkbox__text::after {
+  background-color: #BC9CFF;
+  left: 24px;
+}

@@ -127,7 +127,7 @@ h3{
     .contaner__inblck{
         display: flex;
         justify-content: flex-start;
-        margin: 10px 0 25px 0;
+        margin: 16px 0 20px 0;
     }
     .contaner__radio-lable:first-child{
         margin: 0 10px 0 0;
@@ -254,4 +254,44 @@ h3{
         left: 24px;
     }
 }
-
+.btn{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    .contaner__pay{
+        position: absolute;
+        left: 236px;
+        width: 44px;
+        height: 44px;
+        background-color: transparent;
+        outline: none;
+        border: none;
+        cursor: pointer;
+    }
+}
+.box__gradient{
+    width: 98px;
+    height: 43px;
+    outline: none;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #BC9CFF;
+    position: relative;
+    border-radius: 2em;
+    
+}
+.box__gradient::before{
+    content: "";
+    width: 102px;
+    height: 47px;
+    background-image: linear-gradient(to top, #BC9CFF 0%, #8BA4F9 100%);
+    position: absolute;
+    z-index: -1;
+    border-radius: 2em;
+    left: -2%;
+    top: -4%;
+}

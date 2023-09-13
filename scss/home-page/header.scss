@@ -1,0 +1,131 @@
+.contaner__logo-gray{
+    margin: 30px 0 62px 30px;
+}
+.contaner{
+    width: 100%;
+    height: 70px;
+    position: relative;
+    left: 0;
+    top: 0;
+    margin: 30px auto;
+    background-color: white;
+    .contaner__for-all{
+        width: 100%;
+        height: 70px;
+        display: flex;
+        // justify-content: center;
+        align-items: center;
+    }
+}
+
+.contaner__logo{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 106px;
+    height: 40px;
+    margin: 0 284px 0 140px;
+    .contaner__avatar{
+        position: relative;
+        width: 40px;
+        height: 40px;
+    }
+}
+// nav
+.contaner__list{
+    position: relative;
+    display: inline-flex;
+    width: 450px;
+    margin: 0 40px 0 0;
+    .contaner__item{
+        width: 447px;
+    }
+    .item{
+        display: block;
+        font-size: 14px;
+        font-weight: 400px;
+        color: #1F204180;
+    }
+    .item:first-child{
+        font-weight: 700;
+        color: #1F2041BF;
+    }
+    .contaner__search{
+        left: 129px;
+        position: absolute;
+        background-color: transparent;
+        outline: none;
+        border: none;
+        cursor: pointer;
+    }
+    .contaner__search:last-child{
+        left: 452px;
+    }
+}
+// nav
+.contaner__buttons{
+    width: 87px+196px+20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 160px 0 0;
+    .box__gradient{
+        width: 87px;
+        height: 34px;
+        outline: none;
+        border: none;
+        background-color: white;
+        cursor: pointer;
+        position: relative;
+    }
+    .box__gradient::after{
+        content: "войти";
+        width: 83px;
+        height: 30px;
+        outline: none;
+        border: none;
+        background-color: white;
+        border-radius: 2em;
+        left: 2.5%;
+        top: 5%;
+        font-size: 12px;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        color: #BC9CFF;
+        position: absolute;
+        z-index: 2;
+    }
+    .box__gradient::before{
+        content: "";
+        width: 87px;
+        height: 34px;
+        background-image: linear-gradient(to top, #BC9CFF 0%, #8BA4F9 100%);
+        position: absolute;
+        z-index: 1;
+        border-radius: 2em;
+        left: 0.5%;
+        top: 1%;
+    }
+    .contaner__btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 196px;
+        height: 34px;
+        font-size: 12px;
+        font-weight: bold;
+        border-radius: 2rem;
+        margin: 0 0 0 20px;
+        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+        text-align: center;
+        color: #FFF;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: white;
+        border: none;
+    }
+}

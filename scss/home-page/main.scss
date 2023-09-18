@@ -1,0 +1,72 @@
+.slide {
+    width: 270px;
+}
+.expand{
+    font-family: Material Icons, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.swiper__contaner{
+    width: 270px;
+    height: 257.5px;
+    position: relative;
+    margin: 0 100px;
+    background-color: white;
+    overflow: hidden;
+    .swiper__wrapper{
+        width: 1080px;
+        height: 152px;
+        display: flex;
+        position: relative;
+        left: 0;
+        transition: all ease 500ms;
+    }
+    .swiper__button{
+        width: 44px;
+        height: 151px;
+        outline: none;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    .swiper__prev{
+        position: absolute;
+        top: 0px;
+        left: 0;
+    }
+    .swiper__prev:hover{
+        box-shadow:inset linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
+
+    }
+    .swiper__next{
+        position: absolute;
+        top: 0px;
+        left: 226px;
+    }
+    .swiper__next{
+        box-shadow: inset linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
+        ;
+    }
+    .swiper__radio{
+        width: 47px;
+        height: 7.49px;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top: 128.89px;
+        left: 213.75px;
+    }
+    .slide__dot{
+        width: 7.5px;
+        height: 7.49px;
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 50%;
+    }
+    .active__dot{
+        background-color: rgb(255, 255, 255);
+    }
+}
+

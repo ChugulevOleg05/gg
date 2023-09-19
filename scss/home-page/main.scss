@@ -9,6 +9,15 @@
     letter-spacing: 0em;
     text-align: center;
 }
+.contaner__flex{
+    width: 70%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin: 100px auto;
+}
 .swiper__contaner{
     width: 270px;
     height: 257.5px;
@@ -59,14 +68,40 @@
         top: 128.89px;
         left: 213.75px;
     }
-    .slide__dot{
+    .slide__dot, .slide__dot-two{
         width: 7.5px;
         height: 7.49px;
         border: 1px solid rgb(255, 255, 255);
         border-radius: 50%;
     }
-    .active__dot{
+    .active__dot, .active__dot-two{
         background-color: rgb(255, 255, 255);
     }
 }
+.swiper__text{
+    width: 234px;
+    height: 67px;
+    border: 2px solid red;
+    margin: 19px 16px 19px 20px;
+    position: relative;
+    display: flex;
 
+    .swiper__inline{
+        width: 234px;
+        height: 33.5px;
+        display: flex;
+        border: 2px solid red;
+    }
+    .num{
+        font-family: 'Quicksand', sans-serif;
+        font-size: 14;
+
+    }
+    .sum{
+        font-size: 12px;
+    }
+    .swiper__inline-under{
+        width: 234px;
+        height: 33.5px;
+    }
+}

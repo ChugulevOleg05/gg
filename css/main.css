@@ -1,3 +1,9 @@
+hr {
+  width: 230px;
+  border: 1px solid rgba(31, 32, 65, 0.1);
+  margin: 10px 0 8px 0;
+}
+
 .slide {
   width: 270px;
 }
@@ -83,25 +89,79 @@
 .swiper__text {
   width: 234px;
   height: 67px;
-  border: 2px solid red;
   margin: 19px 16px 19px 20px;
   position: relative;
-  display: flex;
+  display: inline-block;
 }
 .swiper__text .swiper__inline {
   width: 234px;
-  height: 33.5px;
   display: flex;
-  border: 2px solid red;
+  justify-content: space-between;
+  align-items: baseline;
 }
 .swiper__text .num {
-  font-family: "Quicksand", sans-serif;
-  font-size: 14;
+  font-family: Quicksand, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: bold;
+}
+.swiper__text .num__lux {
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgb(188, 156, 255);
 }
 .swiper__text .sum {
   font-size: 12px;
+  color: rgba(31, 32, 65, 0.5);
+  font-size: 14px;
+  line-height: 18px;
 }
 .swiper__text .swiper__inline-under {
   width: 234px;
-  height: 33.5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  color: rgba(31, 32, 65, 0.5);
+}
+.swiper__text .comment {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.rating {
+  width: 120px;
+  height: 24px;
+  display: inline-flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+.rating .rating__item {
+  font-size: 24px;
+  color: rgb(188, 156, 255);
+  transition: 0.2s;
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.rating__item:hover::before,
+.rating__item:hover ~ .rating__item::before {
+  content: attr(data-star);
+  font-size: 24px;
+  color: rgb(188, 156, 255);
+  position: absolute;
+}
+
+.rating[data-total-star="1"] .rating__item:nth-child(n+5)::before,
+.rating[data-total-star="2"] .rating__item:nth-child(n+4)::before,
+.rating[data-total-star="3"] .rating__item:nth-child(n+3)::before,
+.rating[data-total-star="4"] .rating__item:nth-child(n+2)::before,
+.rating[data-total-star="5"] .rating__item:nth-child(n+1)::before {
+  content: attr(data-star);
+  position: absolute;
 }

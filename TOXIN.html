@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Quicksand:wght@700&display=swap" rel="stylesheet">
     <title>TOXIN</title>
 </head>
 <body>
@@ -83,13 +86,19 @@
                 </div>
                 <div class="swiper__text">
                     <div class="swiper__inline">
-                        <span class="num">№ 840</span>
-                        <span class="sum">9 900₽ в сутки</span>
+                        <div class="num">№ 840<span class="num__lux">люкс</span></div>
+                        <div class="sum"><strong>9 990₽</strong> в сутки</div>
                     </div>
-                    <br>
+                    <hr>
                     <div class="swiper__inline-under">
-                        <span class="score">звездочки</span>
-                        <span class="comment">65 Отзывов</span>
+                        <div class="rating" data-total-star="5">
+                            <div class="rating__item" data-star="★" data-star-value="5">☆</div>
+                            <div class="rating__item" data-star="★" data-star-value="4">☆</div>
+                            <div class="rating__item" data-star="★" data-star-value="3">☆</div>
+                            <div class="rating__item" data-star="★" data-star-value="2">☆</div>
+                            <div class="rating__item" data-star="★" data-star-value="1">☆</div>
+                        </div>
+                        <div class="comment"><strong>145</strong> Отзывов</div>
                     </div>
                 </div>
             </div>
@@ -111,6 +120,23 @@
                     <div class="slide__dot-two"></div>
                     <div class="slide__dot-two"></div>
                     <div class="slide__dot-two"></div>
+                </div>
+                <div class="swiper__text">
+                    <div class="swiper__inline">
+                        <div class="num">№ 840</div>
+                        <div class="sum"><strong>9 900₽</strong> в сутки</div>
+                    </div>
+                    <hr>
+                    <div class="swiper__inline-under">
+                        <div class="rating" data-total-star="3">
+                            <div class="rating__item" data-star="★" data-star-value="5">☆</div>
+                            <div class="rating__item" data-star="★" data-star-value="4">☆</div>
+                            <div class="rating__item" data-star="★" data-star-value="3">☆</div>
+                            <div class="rating__item" data-star="★" data-star-value="2">☆</div>
+                            <div class="rating__item" data-star="★" data-star-value="1">☆</div>
+                        </div>
+                        <div class="comment"><strong>65</strong> Отзывов</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -181,5 +207,6 @@
         </div>
     </footer>
     <script src="./js/main.js"></script>
+    <script src="./js/rating.js"></script>
 </body>
 </html>
